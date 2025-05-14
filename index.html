@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Relatório de Visitas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Relatório de Visita Institucional</h1>
+        
+        <label>Visitado por:</label>
+        <textarea id= "visited" rows="1"></textarea>
+
+        <label>Data e Hora de Início:</label>
+        <input type="datetime-local" id="startTime">
+        <label>Data e Hora do Fim:</label>
+        <input type="datetime-local" id="endTime">
+
+        <label>Sítio Funcional</label>
+        <textarea id= "environment" rows="1"></textarea>
+
+        <label>Adicione uma Observação:</label>
+        <textarea id="observation" rows="3"></textarea>
+
+        <label>Selecione até 2 Fotos:</label>
+        <input type="file" id="photoInput" accept="image/*" multiple>
+
+        <button onclick="addEntry()">Adicionar Sítio Funcional</button>
+
+        <div id="entries"></div>
+        <button onclick="generatePDF()">Gerar PDF</button>
+    </div>
+
+    <!-- Bibliotecas jsPDF e html2canvas -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
