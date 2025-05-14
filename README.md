@@ -60,4 +60,4 @@ Este projeto está sob a licença MIT. Sinta-se à vontade para usar, modificar 
 
 ---
 
-Desenvolvido com 💻 por [Seu Nome]
+Desenvolvido com 💻 por Guilherme Trama
